@@ -123,6 +123,9 @@ body {
         font-size: 15px;
     }
     .wrapper-header {
-        width: 30px;
+        width: 50px;
+    }
+    .wrapper-header >  ul {
+        gap: 2px;
     }
 }
