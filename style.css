@@ -1,131 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    background-color: #181a1b;
+body, html {
+    height: 100%;
+
+    -ms-user-select: none; 
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    user-select: none;
+
+    scroll-behavior: smooth;
 }
 
-.wrapper-header {
+header {
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    padding: 30px 70px;
+    font-family: "Poppins", serif;
+    align-items: center;
+    background-color: white;
+
     position: fixed;
     top: 0;
-    width: 97%;
-    z-index: 1000; 
-    font-family: "Figtree", sans-serif;
+    z-index: 1000;
+    width: 94%;
 }
 
-.wrapper-header > h1 {
-    color: white;
-}
-
-.wrapper-header > ul {
+header > ul {
     display: flex;
-    gap: 20px
+    align-items: center;
+    gap: 35px;
 }
 
-.wrapper-header ul > li, a {
+header > ul > li {
     list-style-type: none;
+}
+
+header > ul > li > a {
     text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+header > ul > li > .contacts__a {
+    border-radius: 100px;
+    padding: 13px 30px;
+    background-color: black;
     color: white;
-    padding: 7px 10px;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease;
 }
 
-.wrapper-header > ul > li > a:hover {
-    background-color: #4b646d;
+header > ul > li > .contacts__a:hover {
+    background-color: #418334;
 }
 
-.wrapper {
+
+main > .boxes {
     display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    height: 100%;
 }
 
-
-.wrapper > .cards > .navigation-card {
-    padding-top: 45vh;
-    font-size: 20px;
-    font-family: "Figtree", sans-serif;
-    color: white;
+main > .boxes > .aboutme {
+    padding-top: 30vh;
 }
 
-.wrapper > .cards > .navigation-card > ul {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
+main > .boxes > .aboutme > h1 {
+    font-family: "Poppins", serif;
+    font-size: 50px;
 }
 
-.wrapper > .cards > .navigation-card > ul > li, a {
-    margin-top: 15px;
-    font-size: 20px;
-}
-
-.wrapper > .cards > .about-card {
-    padding-top: 50vh;
-    font-size: 20px;
-    font-family: "Figtree", sans-serif;
-    color: white;
-}
-
-.wrapper > .cards > .about-card > ul > li {
-    padding-top: 4px;
+main > .boxes > .aboutme > p {
+    font-family: "Poppins", serif;
     font-size: 30px;
-    list-style-type: none;
+    font-weight: 500;
 }
 
-.wrapper > .cards > .work-card {
-    padding-top: 200px;
-    font-size: 20px;
-    font-family: "Figtree", sans-serif;
-    color: white;
+
+main > .boxes > .projects {
+    padding-top: 48vh;
 }
 
-.wrapper > .cards > .work-card > ul > li {
-    padding-top: 4px;
+main > .boxes > .projects > h1 {
+    font-family: "Poppins", serif;
+    font-size: 45px;
+}
+
+main > .boxes > .projects > p {
+    font-family: "Poppins", serif;
     font-size: 30px;
-    list-style-type: none;
+    font-weight: 500;
 }
 
-.wrapper > .cards > .contact-card {
-    padding-top: 200px;
-    padding-bottom: 100px;
+
+main > .boxes > .contacts {
+    padding-top: 62vh;
+}
+
+main > .boxes > .contacts > h1 {
+    font-family: "Poppins", serif;
+    font-size: 45px;
+}
+
+main > .boxes > .contacts > p {
+    font-family: "Poppins", serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+main > .boxes > .contacts > p > a {
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+main > .boxes > .contacts > p > a:hover {
     font-size: 20px;
-    font-family: "Figtree", sans-serif;
-    color: white;
 }
 
-.wrapper > .cards > .contact-card > ul {
+footer > p {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    color: rgb(0, 0, 0);
+    padding-top: 48vh;
+
     display: flex;
-    gap: 12px;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    height: 100%;
 }
 
-.wrapper > .cards > .contact-card > ul > li, a {
-    margin-top: 15px;
-    font-size: 20px;
-}
 
-.wrapper > .cards > .contact-card > ul > li, a:hover {
-    background-color: #4b6d4b;
-}
-
-@media (max-width:431px) {
-    .wrapper-header >  ul > li > a {
-        font-size: 15px;
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
     }
-    .wrapper-header {
-        width: 50px;
+
+    header > ul {
+        flex-direction: column;
+        gap: 10px;
     }
-    .wrapper-header >  ul {
-        gap: 2px;
+
+    header > ul > li > a {
+        font-size: 16px; /* Меньший размер шрифта для мобильных */
+    }
+
+    main > .boxes > .aboutme,
+    main > .boxes > .projects,
+    main > .boxes > .contacts {
+        padding-top: 20vh; /* Измените отступ для меньших экранов */
+        text-align: center; /* Центрирование текста */
+    }
+
+    main > .boxes > .aboutme > h1,
+    main > .boxes > .projects > h1,
+    main > .boxes > .contacts > h1 {
+        font-size: 30px; /* Меньший размер заголовка */
+    }
+
+    main > .boxes > .aboutme > p,
+    main > .boxes > .projects > p,
+    main > .boxes > .contacts > p {
+        font-size: 18px; /* Меньший размер текста */
+    }
+
+    footer > p {
+        font-size: 16px; /* Меньший текст в подвале */
+        padding-top: 20vh; /* Измените отступ для подвала */
     }
 }

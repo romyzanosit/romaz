@@ -3,57 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-    <link rel="icon" href="logo.svg">
-    <title>romaz</title>
+    <title>whoapi</title>
 </head>
 <body>
-        <div class="wrapper-header" id="wrapper-header">
-            <h1>romaz</h1>
-            <ul>
-                <li><a href="#contact-card">contact</a></li>
-                <li><a href="#about-card">about</a></li>
-                <li><a href="#work-card">work</a></li>
-            </ul>
-        </div>
-        <div class="wrapper">
-            <div class="cards">
-                <div class="navigation-card">
-                    <h1>Welcome to my site!</h1>
-                    <ul>
-                        <a href="#contact-card">My contacts</a>
-                        <a href="#about-card">About me</a>
-                        <a href="#work-card">My works</a>
-                    </ul>
-                </div>
-                <div class="about-card" id="about-card">
-                    <h1>About me</h1>
-                    <ul>
-                        <li><label id="age"></label> Years Old</li>
-                        <li>Python Developer</li>
-                        <li>From Russia</li>
-                    </ul>
-                </div>
-                <div class="work-card" id="work-card">
-                    <h1>My works</h1>
-                    <ul>
-                        <li>Telegram Bot</li>
-                        <li>GUI App</li>
-                    </ul>
-                </div>
-                <div class="contact-card" id="contact-card">
-                    <h1>My contacts</h1>
-                    <ul>
-                        <a href="https://t.me/romaperec">Telegram</a>
-                        <a href="https://github.com/romyzanosit">GitHub</a>
-                    </ul>
-                </div>
+    <header>
+        <h1>whoapi 🍃</h1>
+        <ul>
+            <li><a href="#aboutme">about me</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contacts" class="contacts__a">contacts</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="boxes">
+            <div class="aboutme" id="aboutme">
+                <h1>What about me?</h1>
+                <p>
+                    🤐 Age: 15<br>
+                    🐍 Language: Python<br>
+                    💻 Specialization: Backend Developer<br>
+                    🚀 Interests: Web development, algorithms, and problem-solving<br>
+                    🎁 Goals: To create impactful applications and continue learning
+                </p>
+            </div>
+            
+            <div class="projects" id="projects">
+                <h1>What projects?</h1>
+                <p>
+                    🤖 Telegram Bots: Developed several bots that automate tasks and improve user experience.<br>
+                    🖥️ GUI Applications: Created user-friendly applications with intuitive designs.<br>
+                    📊 Databases: Worked with SQL and NoSQL databases for efficient data management.<br>
+                </p>
+            </div>
+
+            <div class="contacts">
+                <h1>How to contact me?</h1>
+                <p id="contacts">
+                    ✈️ Telegram. <a href="https://t.me/romaperec">button</a><br>
+                    🐈‍⬛ GitHub. <a href="https://github.com/romyzanosit">button</a><br>
+                </p>
             </div>
         </div>
-        <py-script>
-            import datetime as dt
-            pyscript.write("age", (dt.date.today().year - 2009))
-        </py-script>
+    </main>
+    <footer>
+        <p>2024 © whoapi nothing is protected</p>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
