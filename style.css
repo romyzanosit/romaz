@@ -146,8 +146,7 @@ footer > p {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        padding: 20px;
+        justify-content: start
     }
 
     header > ul {
