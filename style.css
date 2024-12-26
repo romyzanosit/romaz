@@ -151,35 +151,34 @@ footer > p {
     }
 
     header > ul {
-        flex-direction: column;
-        gap: 10px;
+        display: none;
     }
 
     header > ul > li > a {
-        font-size: 16px; /* Меньший размер шрифта для мобильных */
+        font-size: 16px;
     }
 
     main > .boxes > .aboutme,
     main > .boxes > .projects,
     main > .boxes > .contacts {
-        padding-top: 20vh; /* Измените отступ для меньших экранов */
-        text-align: center; /* Центрирование текста */
+        padding-top: 20vh;
+        text-align: center;
     }
 
     main > .boxes > .aboutme > h1,
     main > .boxes > .projects > h1,
     main > .boxes > .contacts > h1 {
-        font-size: 30px; /* Меньший размер заголовка */
+        font-size: 30px;
     }
 
     main > .boxes > .aboutme > p,
     main > .boxes > .projects > p,
     main > .boxes > .contacts > p {
-        font-size: 18px; /* Меньший размер текста */
+        font-size: 18px;
     }
 
     footer > p {
-        font-size: 16px; /* Меньший текст в подвале */
-        padding-top: 20vh; /* Измените отступ для подвала */
+        font-size: 16px;
+        padding-top: 20vh;
     }
 }
